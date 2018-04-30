@@ -1,7 +1,7 @@
 import numpy as np
 import cv2
 
-dev_id = 1
+dev_id = 0
 cap = cv2.VideoCapture(dev_id)
 #dictionary = cv2.aruco.getPredefinedDictionary(cv2.aruco.DICT_5X5_1000)
 #dictionary = cv2.aruco.getPredefinedDictionary(cv2.aruco.DICT_4X4_50)
@@ -37,7 +37,7 @@ while(True):
 
     # Display the resulting frame
     cv2.imshow('frame',gray)
-    if cv2.waitKey(1) == ord('q')
+    if cv2.waitKey(1) == ord('q'):
         break
 
 # When everything done, release the capture
