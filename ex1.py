@@ -2,14 +2,13 @@ import os
 import sys
 import cv2
 import numpy as np
-import aruco
+import cv2.aruco as aruco
 
 if __name__ == '__main__':
 
     # load board and camera parameters
-    #boardconfig = aruco.BoardConfiguration("chessboardinfo_small_meters.yml")
-    camparam = aruco.CameraParameters()
-    camparam.readFromXMLFile(os.path.join(os.path.dirname(__file__), "dfk72_6mm_param2.yml"))
+    #camparam = aruco.camera_parameters()
+    #camparam.readFromXMLFile(os.path.join(os.path.dirname(__file__), "cam.yaml"))
 
     # create detector and get parameters
     detector = aruco.MarkerDetector()
